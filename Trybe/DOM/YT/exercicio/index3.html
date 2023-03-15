@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .caixa{
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid rgb(214, 219, 214);
+      padding: 20px;
+      margin: 50px;
+      width: 400px;
+      text-align: center;
+    }
+
+    .alerta{
+      padding: 5px;
+      text-align: center;
+      background-color: red;
+      color: azure;
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="caixa">
+    <p>Nesta div apenas existe um paragrafo</p>
+  </div>
+
+  <script>
+    let novoElemento = document.createElement('p');
+    novoElemento.className = 'alerta';
+    novoElemento.innerText = 'Esta é uma mensagem de alerta';
+
+    let elemento = document.querySelector('.caixa');
+    elemento.appendChild(novoElemento);
+
+  </script>
+<!-- 
+createElement //
+ -->
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+header{
+    background-color: aqua;
+    border: 3px solid black;
+    height: 100px;
+}
+
+nav{
+    background-color: bisque;
+    border: 3px solid black;
+    height: 120px;
+    top: 50px;
+    left: 50px;
+   /* width: 50px;*/
+}

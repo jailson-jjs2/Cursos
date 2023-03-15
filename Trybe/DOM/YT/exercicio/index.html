@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <h3 id="titulo">Este texto tem <i><u>Importancia</u></i></h3>
+
+  <div class="noticia">
+    <h1>Titulo da noticia 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, nemo nostrum odit labore voluptate officiis veritatis, deleniti, ipsam asperiores laboriosam cumque dolorum ad ipsum beatae aperiam provident hic! Accusamus, ratione!</p>
+  </div>
+
+  <div>
+    <h1>Titulo da noticia 2</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est rem perspiciatis nobis ad pariatur fugit incidunt aperiam a optio, minima reprehenderit, laudantium ex porro esse? Aliquam doloribus dignissimos eos!</p>
+    </div>
+
+    <img src="fig1.jpg" alt="Noticias" id="noticias" onclick="alterarTexto();;"> // EXE A FUNCAO
+  </body>
+    <script>
+      let elemento = document.querySelector('#titulo'); // ACESSANDO O ID
+      let u = document.querySelector('#titulo > i > u'); // ACESSANDO O U
+      u.style.color = 'red';
+      let noticia1 = document.querySelector('.noticia > h1');
+      noticia1.innerText ='Alterando o Texto';
+
+      let imagem = document.querySelector('#noticias'); // ACESSANDO A FIGURA
+      imagem.src = 'fig2.jpeg';
+
+      function alterarTexto () {
+        let funTexto = document.querySelector('#titulo')
+        funTexto.innerText = 'Texto alterado pela função'
+        funTexto.style.color = 'red'
+        funTexto.style.textTransform = 'uppercase';
+      };
+      
+
+
+    </script>
+
+</html>
+
+<!-- 
+  PROPRIEDADES
+innerHTML // MOSTRA E ADD O TEXTO MAS O CONTEUDO, EX: <u> SE TIVER.
+outerHTML // MOSTRA E ADD ESTUTURA COMPLAS, tag E O RESTO PODENDO ADD tags.
+innerText // MOSTRA E ADD SO TEXTO
+  EVENTOS
+
+-->
